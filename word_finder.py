@@ -29,10 +29,25 @@ Tests:
 # Use this to test your solution. Don't edit it!
 import doctest
 def run_tests():
-        doctest.testmod(verbose=True)
+    doctest.testmod(verbose=True)
 
 
 # Edit this code
 def find(word, s):
 
+    s = s.lower()
+    word = word.lower()
 
+    if s.startswith(word):
+            print("Start")
+    elif s.endswith(word):
+            print("End")
+    elif word in s:
+            print("Middle")
+    else:
+            print("Not found")
+
+
+#~~~~~~~~~#
+#Completed#
+#~~~~~~~~~#
